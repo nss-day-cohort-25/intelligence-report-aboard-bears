@@ -1,4 +1,4 @@
-#catcoin {
+.catcoin {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -24,10 +24,10 @@ section {
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
-    background-color:  rgba(255, 105, 180, .3);
+    background-color:  rgba(255, 105, 180, .9);
     align-content: center;
     text-align: center;
-    
+    border-radius: 25px;
   }
 
 li {
