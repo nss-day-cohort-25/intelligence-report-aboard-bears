@@ -30,6 +30,7 @@ p {
 
 li {
   font-family: 'Courgette', cursive;
+  list-style-type: none;
 }
 
 
