@@ -1,10 +1,11 @@
+/* Master CSS for all pages */
 body {
   background-color: pink;
 }
 
 h1, h2, h3, h4, h5 {
   color: purple;
-  font-family: "Brush Script MT", cursive;
+  font-family: 'Courgette', cursive;
 }
 
 h1 {
@@ -23,13 +24,14 @@ h5 {
   font-size: 10px
 }
 p {
-  font-family: "Brush Script MT", cursive;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
 }
 
 li {
-  font-family: "Brush Script MT", cursive;
-  list-style-type: none;
+  font-family: 'Courgette', cursive;
 }
+
 
 /* main nav styles */
 header {
