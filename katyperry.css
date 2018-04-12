@@ -1,5 +1,7 @@
+/* Master CSS for all pages */
 body {
   background-color: pink;
+<<<<<<< HEAD
   background-image: url(http://getwallpapers.com/wallpaper/full/c/8/9/187163.jpg) ;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10,6 +12,13 @@ h1, h2, h3, h4, h5 {
   color: pink;
   font-family: "Brush Script MT", cursive;
   text-shadow: 2px 2px 5px purple;
+=======
+}
+
+h1, h2, h3, h4, h5 {
+  color: purple;
+  font-family: 'Courgette', cursive;
+>>>>>>> abd4955ca0251212fdf9bfba0382471ecd798749
 }
 
 h1 {
@@ -28,9 +37,10 @@ h5 {
   font-size: 10px
 }
 p {
-  font-family: "Brush Script MT", cursive;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
 }
 
 li {
-  font-family: "Brush Script MT", cursive;
+  font-family: 'Courgette', cursive;
 }
