@@ -29,3 +29,21 @@ p {
 li {
   font-family: "Brush Script MT", cursive;
 }
+
+/* main nav styles */
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+#mainNav li {
+  font-size: 2em;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2em;  
+}
+
+#mainNav a {
+  text-decoration: none;
+}
