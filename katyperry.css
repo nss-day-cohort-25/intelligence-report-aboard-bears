@@ -28,20 +28,38 @@ p {
 
 li {
   font-family: "Brush Script MT", cursive;
+  list-style-type: none;
 }
 
 /* main nav styles */
-
 header {
+  background: linear-gradient(hotpink, violet);
+  margin-bottom: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+article {
   width: 80%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  align-content: center;
+  text-align: center;
 }
 
 #mainNav li {
   font-size: 2em;
   list-style-type: none;
   display: inline-block;
-  margin-right: 2em;  
+  margin-right: 2em;
+}
+
+#mainNav ul {
+  margin: 0;
+  padding: 1em 0 1em 1em;
 }
 
 #mainNav a {

@@ -16,13 +16,6 @@
     background-color: lime;
 }
 
-article {
-    width: 80%;
-    margin: auto;
-    align-content: center;
-    text-align: center;
-}
-
 article li {
     list-style-type: none;
 }
