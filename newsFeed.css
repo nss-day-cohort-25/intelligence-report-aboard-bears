@@ -1,0 +1,25 @@
+#newsHeading {
+    display: block;
+    text-align: center;
+}
+.willItHappen {
+    display: inline;
+    width: 45%;
+}
+.image {
+    margin: 4px;
+    width: 20%;
+}
+img {
+    border-radius: 4%;
+}
+ul{
+    font-size: 1rem;
+}
+#headingImage {
+    margin: 0 41% 0 41%;
+}
+#taller {
+    height: 17%;
+    width: 23%;
+}
