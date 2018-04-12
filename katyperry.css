@@ -77,3 +77,6 @@ article {
 #mainNav a {
   text-decoration: none;
 }
+img {
+  border-radius: 5%;
+}
