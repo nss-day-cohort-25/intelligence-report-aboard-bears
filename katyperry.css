@@ -1,10 +1,15 @@
 body {
-  background-color: pink
+  background-color: pink;
+  background-image: url(http://getwallpapers.com/wallpaper/full/c/8/9/187163.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5 {
-  color: purple;
+  color: pink;
   font-family: "Brush Script MT", cursive;
+  text-shadow: 2px 2px 5px purple;
 }
 
 h1 {
