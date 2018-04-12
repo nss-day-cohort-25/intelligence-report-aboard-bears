@@ -8,11 +8,12 @@ body {
 }
 
 
-}
-
 h1, h2, h3, h4, h5 {
-  color: purple;
+  color: pink;
   font-family: 'Courgette', cursive;
+  background-color:rgba( 102,51,153,.8);
+  box-shadow: 2px 2px 2px 2px purple;
+  border-radius: 25px;
 }
 
 h1 {
@@ -32,9 +33,47 @@ h5 {
 }
 p {
   font-family: 'Courgette', cursive;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 li {
   font-family: 'Courgette', cursive;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+
+/* main nav styles */
+header {
+  background: linear-gradient(hotpink, violet);
+  margin-bottom: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+article {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  align-content: center;
+  text-align: center;
+}
+
+#mainNav li {
+  font-size: 2em;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2em;
+}
+
+#mainNav ul {
+  margin: 0;
+  padding: 1em 0 1em 1em;
+}
+
+#mainNav a {
+  text-decoration: none;
 }
