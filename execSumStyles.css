@@ -1,0 +1,51 @@
+/* styles for index.html only */
+
+#knownAssociates div {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    border: 3px solid purple;
+    padding: .5em;
+    box-shadow: 10px 10px 5px black;
+}
+
+#knownAssociates div:nth-child(even) {
+    background-color: fuchsia;
+}
+
+#knownAssociates div:nth-child(odd) {
+    background-color: lime;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+article li {
+    list-style-type: none;
+}
+
+.resize {
+    height: 300px;
+    width: auto;
+}
+
+.resize_bigger {
+    height: 500px;
+    width: auto;
+}
+
+#summaryNav li {
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 3em;
+    border: 3px solid purple;
+    padding: .5em;
+}
+
+section {
+    margin-bottom: 10em;
+}
+
