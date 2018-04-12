@@ -77,6 +77,15 @@ article {
 #mainNav a {
   text-decoration: none;
 }
+
+
+h2 ~ ol, h2 ~ ul, .peach-background {
+  background-color: rgba(255, 218, 185, .8);
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
 img {
   border-radius: 5%;
 }
+
