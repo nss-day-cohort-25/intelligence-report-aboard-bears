@@ -34,8 +34,10 @@ article li {
     font-size: 1.5rem;
     display: inline-block;
     margin-right: 3em;
-    border: 3px solid purple;
+    border: 3px solid pink;
     padding: .5em;
+    color: pink;
+    background-color: rgba( 102,51,153,.8)
 }
 
 section {
