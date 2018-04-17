@@ -37,15 +37,18 @@ const finGen = (database) => {
             }   
             //         <img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmzRRT96y3Ls%2Fmaxresdefault.jpg&f=1" class="catcoin">
             //         <figcaption>Suspected Logo of "PerryCoin"</figcaption>
-            story.storyImage.forEach((image)=> {
+            for (let i = 0; i < story.storyImage.length; i++) {
                 const storyImg = document.createElement("img")
-                storyImg.src = image.img
+                storyImg.src = story.storyImage[i].img
+                storyImg.classList = story.storyImage[i].imgClass
                 const imgtext = document.createElement("figcaption")
-                imgtext.textContent = image.imgText
+                imgtext.textContent = story.storyImage[i].imgText
+                
+
                 storysection.appendChild(storyImg)
                 storysection.appendChild(imgtext)
                 
-            });
+            }
             
             
             //append storys to title

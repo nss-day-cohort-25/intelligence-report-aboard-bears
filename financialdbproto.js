@@ -13,24 +13,27 @@ const financialDb = {
                 "Suspected to have convinced her most die hard fan, Steve Brownlee, of NSS, to help with the development."
             ],
             //storyimage img to a img tag and imgtext to 
-            storyImage:{
-                img:"",
-                imgText:"Suspected Logo of \"PerryCoin\""
-            }
+            storyImage:[{
+                img:"https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmzRRT96y3Ls%2Fmaxresdefault.jpg&f=1",
+                imgText:"Suspected Logo of \"PerryCoin\"",
+                imgClass:"catcoin"
+            }]
         },
         {
             storytitle: "Money Laundering",
             storycontent:[
                 "Launders money through though elaborate scheme of inflating number of album sales.",
                 "All research indicates no one would actually buy one of her albums."
-            ]
+            ],
+            storyImage:[]
         },
         {
             storytitle:"Tax Evasion",
             storycontent:[
                 "Created falsified documents that showed that she had donated Massive Sums of money to the NSS program in order to evade taxes.",
                 "IRS Audit pending, will cost NSS dozens of dollars of lost time to complete audit."
-            ]
+            ],
+            storyImage:[]
         }
     ]
 }
