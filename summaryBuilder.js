@@ -67,6 +67,7 @@ const createCountry = () => {
     const section = document.createElement("section")
     const heading = document.createElement("h2")
     heading.textContent = "Country of Origin"
+    section.appendChild(heading)
 
     const image = document.createElement("img")
     image.setAttribute("src", mainDatabase.country.image)

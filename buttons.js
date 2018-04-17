@@ -10,6 +10,13 @@ summaryNav.addEventListener("click", () => {
     printSummary()
 })
 
+rapSheet.addEventListener("click", () => {
+    nukeDOM()
+})
+
+newsFeed.addEventListener("click", () => {
+    nukeDOM()
+})
 
 finance.addEventListener("click", () => {
     nukeDOM()
