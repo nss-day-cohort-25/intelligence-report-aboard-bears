@@ -18,32 +18,25 @@ const finPageGen = () =>{
                 //     <section>
                 const storysection = document.createElement("section")
                 
-                //         <h2>Financial Holdings </h2>
-                // const storytitle = document.createElement("h2")
-                // storytitle.textContent = story.storytitle
+                // create story titles
                 storysection.appendChild(createh2element(story.storytitle))
                 
-                //         <ul>
+                //story content
                 const storyUL = document.createElement("ul")
                 storysection.appendChild(storyUL) 
 
                 //create <li> for all text items
                 for (let i = 0; i < story.storycontent.length; i++) {
-                    const storyContent = document.createElement("li")
-                    storyContent.textContent = story.storycontent[i]
-                    storyUL.appendChild(storyContent)                
+                    storyUL.appendChild(createlielement(story.storycontent[i]))                
                 }   
                 //         <img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmzRRT96y3Ls%2Fmaxresdefault.jpg&f=1" class="catcoin">
                 //         <figcaption>Suspected Logo of "PerryCoin"</figcaption>
                 for (let i = 0; i < story.storyImage.length; i++) {
-                    const storyImg = document.createElement("img")
-                    storyImg.src = story.storyImage[i].img
-                    storyImg.classList = story.storyImage[i].imgClass
+
+                    storysection.appendChild(createimgelement(story.storyImage[i].img, story.storyImage[i].imgClass))
+
                     const imgtext = document.createElement("figcaption")
                     imgtext.textContent = story.storyImage[i].imgText
-                    
-
-                    storysection.appendChild(storyImg)
                     storysection.appendChild(imgtext)
                     
                 }
