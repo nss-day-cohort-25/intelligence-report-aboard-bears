@@ -1,4 +1,5 @@
-const financialDb = {
+const mainDatabase = {}
+mainDatabase.financialDb = {
     // this would be the H1 component
     pgtitle:"Katy Perry Financial Interests",
     // stories would probalby be each linked to a <section>
