@@ -5,44 +5,69 @@ const rapSheet = document.querySelector("#rap-sheet")
 const newsFeed = document.querySelector("#news")
 const finance = document.querySelector("#finance")
 
-summaryNav.style.background = "linear-gradient(#eb94d0, green)"
+//functions to define colors for buttons
+const setButtonCurrentPage = (buttonid) => {
+    buttonid.style.background = "linear-gradient(pink, green)"
+    buttonid.addEventListener("mouseover", () => {
+    buttonid.style.background = "linear-gradient(green, pink)"
+})
+    buttonid.addEventListener("mouseout", () => {
+    buttonid.style.background = "linear-gradient(pink, green)"
+})
+}
 
+const takeButtonCurrentPage = (buttonid) => {
+    buttonid.style.background = "linear-gradient(pink, cornflowerblue)"
+    buttonid.addEventListener("mouseover", () => {
+    buttonid.style.background = "linear-gradient(cornflowerblue, pink)"
+})
+    buttonid.addEventListener("mouseout", () => {
+    buttonid.style.background = "linear-gradient(pink, cornflowerblue)"
+})
+}
 
+setButtonCurrentPage(summaryNav)
+takeButtonCurrentPage(rapSheet)
+takeButtonCurrentPage(newsFeed)
+takeButtonCurrentPage(finance)
+
+//click event listeners
 summaryNav.addEventListener("click", () => {
     nukeDOM()
     printSummary()
-    summaryNav.style.background = "linear-gradient(#eb94d0, green)"
-    rapSheet.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    newsFeed.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    finance.style.background = "linear-gradient(#eb94d0, #2079b0)"
+
+    setButtonCurrentPage(summaryNav)
+    takeButtonCurrentPage(rapSheet)
+    takeButtonCurrentPage(newsFeed)
+    takeButtonCurrentPage(finance) 
 })
 
 rapSheet.addEventListener("click", () => {
     nukeDOM()
 
 
-    summaryNav.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    rapSheet.style.background = "linear-gradient(#eb94d0, green)"
-    newsFeed.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    finance.style.background = "linear-gradient(#eb94d0, #2079b0)"
-})
+    takeButtonCurrentPage(summaryNav)
+    setButtonCurrentPage(rapSheet)
+    takeButtonCurrentPage(newsFeed)
+    takeButtonCurrentPage(finance) 
+})        
 
 newsFeed.addEventListener("click", () => {
     nukeDOM()
 
     
-    summaryNav.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    rapSheet.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    newsFeed.style.background = "linear-gradient(#eb94d0, green)"
-    finance.style.background = "linear-gradient(#eb94d0, #2079b0)"
+    takeButtonCurrentPage(summaryNav)
+    takeButtonCurrentPage(rapSheet)
+    setButtonCurrentPage(newsFeed)
+    takeButtonCurrentPage(finance) 
 })
 
 finance.addEventListener("click", () => {
     nukeDOM()
     finPageGen()
 
-    summaryNav.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    rapSheet.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    newsFeed.style.background = "linear-gradient(#eb94d0, #2079b0)"
-    finance.style.background = "linear-gradient(#eb94d0, green)"
+    takeButtonCurrentPage(summaryNav)
+    takeButtonCurrentPage(rapSheet)
+    takeButtonCurrentPage(newsFeed)
+    setButtonCurrentPage(finance) 
 })
