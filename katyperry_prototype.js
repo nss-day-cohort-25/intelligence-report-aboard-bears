@@ -18,10 +18,17 @@ mainDatabase.financialHoldings.push(
   }
 {
     "title": "Money Laundering",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "values": [
+      "Launders money through though elaborate scheme of inflating number of album sales.",
+      "All research indicates no one would actually buy one of her albums."
+    ]
+  }
+  {
+    "title": "Tax Evasion",
+    "values": [
+      "Created falsified documents that showed that she had donated Massive Sums of money to the NSS programin order to evade taxes.",
+      "IRS Audit pending, will cost NSS dozens of dollars of lost time to complete audit."
+    ]
   }
 
 )
