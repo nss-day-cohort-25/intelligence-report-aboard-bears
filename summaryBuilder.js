@@ -3,15 +3,8 @@
 const createMugshot = () => {
     const article = document.querySelector("#main")
     const section = document.createElement("section")
-    const heading = document.createElement("h1")
-    heading.textContent = "Known Threat: " + mainDatabase.mugshot.content 
-    section.appendChild(heading)
-
-    const image = document.createElement("img")
-    image.setAttribute("src", mainDatabase.mugshot.image)
-    image.classList = "resize_bigger"
-    section.appendChild(image)
-
+    section.appendChild(createh1element("Known Threat: " + mainDatabase.mugshot.content))
+    section.appendChild(createimgelement(mainDatabase.mugshot.image, "resize_bigger"))
     return section
 }
 
@@ -19,24 +12,15 @@ const createAssociates = () => {
     const article = document.querySelector("#main")
     const section = document.createElement("section")
     section.setAttribute("class", "knownAssociates")
-    const heading = document.createElement("h2")
-    heading.textContent = "Known Associates"
-    section.appendChild(heading)
+    section.appendChild(createh2element("Known Associates"))
 
     mainDatabase.knownAssociates.forEach(associate => {
         let div = document.createElement("div")
-        let header = document.createElement("h4")
-        header.textContent = associate.name
-        div.appendChild(header)
+        div.appendChild(createh4element(associate.name))
 
-        let relation = document.createElement("p")
-        relation.textContent = associate.relation
-        div.appendChild(relation)
+        div.appendChild(createpelement(associate.relation))
 
-        let image = document.createElement("img")
-        image.setAttribute("src", associate.image)
-        image.setAttribute("class", "resize")
-        div.appendChild(image)
+        div.appendChild(createimgelement(associate.image, "resize"))
 
         section.appendChild(div)
         
@@ -47,15 +31,11 @@ const createAssociates = () => {
 const createAliases = () => {
     const article = document.querySelector("#main")
     const section = document.createElement("section")
-    const heading = document.createElement("h2")
-    heading.textContent = "Known Aliases"
-    section.appendChild(heading)
+    section.appendChild(createh2element("Known Aliases"))
 
     const list = document.createElement("ul")
     mainDatabase.aliases.forEach(alias => {
-        let listElement = document.createElement("li")
-        listElement.textContent = alias
-        list.appendChild(listElement)
+        list.appendChild(createlielement(alias))
     });
     section.appendChild(list)
 
@@ -65,14 +45,9 @@ const createAliases = () => {
 const createCountry = () => {
     const article = document.querySelector("#main")
     const section = document.createElement("section")
-    const heading = document.createElement("h2")
-    heading.textContent = "Country of Origin"
-    section.appendChild(heading)
+    section.appendChild(createh2element("Country of Origin"))
 
-    const image = document.createElement("img")
-    image.setAttribute("src", mainDatabase.country.image)
-    image.setAttribute("class", "resize_bigger")
-    section.appendChild(image)
+    section.appendChild(createimgelement(mainDatabase.country.image, "resize_bigger"))
     
     return section
 }
