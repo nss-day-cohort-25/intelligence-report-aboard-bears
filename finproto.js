@@ -63,5 +63,5 @@ const finPageGen = () =>{
         finDbFrag.appendChild(title)
     }
     finGen(mainDatabase.financialDb)
-    document.querySelector("#report").appendChild(finDbFrag)
+    document.querySelector("#main").appendChild(finDbFrag)
 }
