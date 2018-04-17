@@ -9,7 +9,7 @@ const createMugshot = () => {
 
     const image = document.createElement("img")
     image.setAttribute("src", mainDatabase.mugshot.image)
-    image.classList = "resize"
+    image.classList = "resize_bigger"
     section.appendChild(image)
 
     article.appendChild(section)
@@ -44,5 +44,39 @@ const createAssociates = () => {
     article.appendChild(section)
 }
 
+const createAliases = () => {
+    const article = document.querySelector("#main")
+    const section = document.createElement("section")
+    const heading = document.createElement("h2")
+    heading.textContent = "Known Aliases"
+    section.appendChild(heading)
+
+    const list = document.createElement("ul")
+    mainDatabase.aliases.forEach(alias => {
+        let listElement = document.createElement("li")
+        listElement.textContent = alias
+        list.appendChild(listElement)
+    });
+    section.appendChild(list)
+
+    article.appendChild(section)
+}
+
+const createCountry = () => {
+    const article = document.querySelector("#main")
+    const section = document.createElement("section")
+    const heading = document.createElement("h2")
+    heading.textContent = "Country of Origin"
+
+    const image = document.createElement("img")
+    image.setAttribute("src", mainDatabase.country.image)
+    image.setAttribute("class", "resize_bigger")
+    section.appendChild(image)
+    
+    article.appendChild(section)
+}
+
 createMugshot()
 createAssociates()
+createAliases()
+createCountry()
