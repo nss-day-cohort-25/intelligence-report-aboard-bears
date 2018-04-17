@@ -21,75 +21,10 @@
             </ul>
         </nav>
     </header>
-    <article>
-      <!-- Main Title -->
-      <h1>Nashville Software School Intelligence Agency Report</h1>
-      <!-- mugshot component -->
-      <section id="mugshot">
-          <h1>Known Threat: Katheryn Elizabeth Hudson<br>aka "Katy Perry"</h1>
-          <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fflashwallpapers.com%2Fwp-content%2Fuploads%2F2015%2F09%2Fkaty-perry-cosmopolitan.jpg&f=1" height="500">
-      </section> <!-- closes mugshot component -->
-        <!-- known associates div -->
-        <h2>Known Associates</h2>
-        <section id="knownAssociates">
-            <div id="KittyPurry">
-                <h4>Kitty Purry</h4>
-                <p>Relation: Pet</p>
-                <img class="resize" src="https://vignette.wikia.nocookie.net/katyperry/images/c/ca/Katy_perry_and_kitty_purry.jpg/revision/latest?cb=20100711051237">
-            </div>
-            <div id="LaurenChristy">
-                <h4>Lauren Christy</h4>
-                <p>Relation: Songwriter/Producer</p>
-                <img class="resize" src="https://pbs.twimg.com/profile_images/557472607985876992/2RF6SFTW.jpeg">
-            </div>
-            <div id="MaxMartin">
-                <h4>Max Martin</h4>
-                <p>Relation: Songwriter/Producer</p>
-                <img class="resize" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Max_Martin.jpg/440px-Max_Martin.jpg">
-            </div>
-            <div id="RussleBrand">
-                <h4>Russell Brand</h4>
-                <p>Relation: Ex-Husband</p>
-                <img class="resize" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Arthur_Russell_Brand_%285622506846%29.jpg/440px-Arthur_Russell_Brand_%285622506846%29.jpg">
-            </div>
-            <div id="SteveBarnett">
-                <h4>Steve Barnett</h4>
-                <p>Relation: Capitol Records, CEO</p>
-                <img class="resize" src="https://pbs.twimg.com/profile_images/557472607985876992/2RF6SFTW.jpeg">
-            </div>
-            <div id="hilleryClinton">
-                <h4>Hilary Clinton</h4>
-                <p>Relation: Political Ally</p>
-                <img class="resize" src="http://www.kiss925.com/wp-content/blogs.dir/7/files/2016/03/Katy-Perry-Hilary-Clinton.png">
-            </div>
-            <div id="SteveBrownlee">
-                <h4>Steve Brownlee</h4>
-                <p>Relation: Biggest Fan</p>
-                <img class="resize" src="https://avatars2.githubusercontent.com/u/218592?s=400&v=4">
-            </div>
-        </section> <!-- closes known associates div -->
-
-
-
-        <!-- known aliases component -->
-        <section id="aliases">
-            <h2>Known Aliases</h2>
-            <ul>
-                <li>Katy Perry</li>
-                <li>Katy Hudson</li>
-                <li>Katheryn Perry</li>
-            </ul>
-        </section> <!-- closes aliases component -->
-
-        <!-- country of origin component -->
-        <section id="country">
-            <h2>Country of Origin</h2>
-            <img class="resize_bigger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_map_of_the_contiguous_United_States_%281912-1959%29.png/1600px-Flag_map_of_the_contiguous_United_States_%281912-1959%29.png">
-        </section> <!-- closes country of origin component -->
-
+    <article id="main">
 
         <!-- links to other sections component -->
-        <section id="summaryNav">
+        <!-- <section id="summaryNav">
             <h3>View the rest of this report:</h3>
             <nav>
                 <ul>
@@ -98,8 +33,20 @@
                     <a href="finance.html"><li>Financial Interests</li></a>
                 </ul>
             </nav>
-        </section> <!-- closes summaryNav component -->
+        </section> closes summaryNav component -->
     </article>
+
+    <script src="Database.js"></script> 
+    <!-- add page database files after this tag -->
+    <script src="SummaryDatabase.js"></script>
+
+    <!-- add page database files before this tag -->
+    <script src="SaveDatabase.js"></script>
+    <!-- add page write files after this tag -->
+    <script src="summaryBuilder.js"></script>
+    <script src="SummaryPrint.js"></script>
+    <script src="removeDOM.js"></script>
+    
 </body>
 </html><!doctype html> 
 <html lang="en">
