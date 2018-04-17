@@ -1,11 +1,4 @@
-const rapsheetdata = {
-  // H1
-  "title": "Rap Sheet",
-  // First Section
-  "sections": [
-    {
-      "heading": "List of alleged crimes:",
-      "list_items": [
+mainDatabase.crimes  =  [
         "California Gurls",
         "I Kissed a Girl",
         "Teenage Dream",
@@ -55,42 +48,44 @@ const rapsheetdata = {
 }
 // create fragment
 const rapSheetFragment = document.createDocumentFragment()
-
 // find selector of element to print to, assign to variable
 const jsbuilder = document.querySelector("#jsbuilder")
 
 // function to create page, attach to fragment
-const rapSheetBuilder = () => {
+const h1builder = () => {
   // create page title
   const h1element = document.createElement("h1")
   // attach database content as text to h1 element
   h1element.textContent = rapsheetdata.title
   // attach h1element to fragment
   rapSheetFragment.appendChild(h1element)
-  // forEach to create sections
+  // did it work?
+  console.log("h1 worked!")
 
-  let i = 0
-  rapsheetdata.sections.forEach(() => {
-    
-    // create h2
+}
+
+const h2builder = () => {
+  // create h2
+  db.sections.forEach(() => {
+    let i = 0
     let h2element = document.createElement("h2")
-    h2element.textContent = rapsheetdata.sections[i].heading
+    // 
+    h2element.textContent = db.sections[i].heading
     rapSheetFragment.appendChild(h2element)
-    
-    // create ul
-    let list = document.createAttribute("ul")
-    
-    // create li for each item
-    rapsheetdata.sections[i].list_items.forEach(() => {
-        // let article = document.createElement("li")
-      })
-      i++
+    i++
   })
+}
+
+const olbuilder = () => {
+  // console.log(rapsheetdata.sections[0].list_items[0])
+}
+
+const rapSheetBuilder = () => {
+  h1builder()
+  h2builder()
+  olbuilder()
+
   jsbuilder.appendChild(rapSheetFragment)
 }
 
-// print fragment to page
-// document.querySelector("#jsbuilder").appendChild(rapSheetFragment)
-
-// call function to create page
-rapSheetBuilder()
+rapSheetBuilder(rapsheetdata)
