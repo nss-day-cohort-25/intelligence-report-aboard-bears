@@ -3,19 +3,19 @@ const finDbFrag = document.createDocumentFragment()
 
 //function to generate page
 
-const finGen = () => {
+const finGen = (database) => {
     // <div>
     //         <h1>Katy Perry Financial Interests </h1>
     // </div>
     let title = document.createElement("div")
 
     const heading = document.createElement("h1")
-    heading.textContent = financialDb.pgtitle
+    heading.textContent = database.pgtitle
     title.appendChild(heading)
 
     //function to iterate through stories section of db
 
-    financialDb.stories.forEach(
+    database.stories.forEach(
         (story) => {
             //     <section>
             const storysection = document.createElement("section")
@@ -37,7 +37,7 @@ const finGen = () => {
             }   
             //         <img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FmzRRT96y3Ls%2Fmaxresdefault.jpg&f=1" class="catcoin">
             //         <figcaption>Suspected Logo of "PerryCoin"</figcaption>
-           /*  story.storyImage.forEach((image)=> {
+            story.storyImage.forEach((image)=> {
                 const storyImg = document.createElement("img")
                 storyImg.src = image.img
                 const imgtext = document.createElement("figcaption")
@@ -45,7 +45,7 @@ const finGen = () => {
                 storysection.appendChild(storyImg)
                 storysection.appendChild(imgtext)
                 
-            }); */
+            });
             
             
             //append storys to title
@@ -56,5 +56,5 @@ const finGen = () => {
    
     finDbFrag.appendChild(title)
 }
-finGen()
+finGen(financialDb)
 document.querySelector("#report").appendChild(finDbFrag)
