@@ -12,7 +12,7 @@ const createMugshot = () => {
     image.classList = "resize_bigger"
     section.appendChild(image)
 
-    article.appendChild(section)
+    return section
 }
 
 const createAssociates = () => {
@@ -41,7 +41,7 @@ const createAssociates = () => {
         section.appendChild(div)
         
     });
-    article.appendChild(section)
+    return section
 }
 
 const createAliases = () => {
@@ -59,7 +59,7 @@ const createAliases = () => {
     });
     section.appendChild(list)
 
-    article.appendChild(section)
+    return section
 }
 
 const createCountry = () => {
@@ -73,10 +73,5 @@ const createCountry = () => {
     image.setAttribute("class", "resize_bigger")
     section.appendChild(image)
     
-    article.appendChild(section)
+    return section
 }
-
-createMugshot()
-createAssociates()
-createAliases()
-createCountry()
