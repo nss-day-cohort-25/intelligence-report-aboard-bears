@@ -61,6 +61,20 @@ article {
   align-content: center;
   text-align: center;
 }
+#mainNav{
+  text-align: center;
+}
+#mainNav button {
+background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+font-size: 2em;
+font-family: 'Courgette', cursive;
+}
+
+#mainNav button:hover {
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+}
 
 #mainNav li {
   font-size: 2em;
