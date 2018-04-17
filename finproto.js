@@ -7,16 +7,11 @@ const finDbFrag = document.createDocumentFragment()
 const finPageGen = () =>{
 
     const finGen = (database) => {
-        // <div>
-        //         <h1>Katy Perry Financial Interests </h1>
-        // </div>
+        
+        //page title
+        
         let title = document.createElement("div")
-
-        const heading = document.createElement("h1")
-        heading.textContent = database.pgtitle
-        title.appendChild(heading)
-
-        //function to iterate through stories section of db
+        title.appendChild(createh1element(database.pgtitle))
 
         database.stories.forEach(
             (story) => {
@@ -24,9 +19,9 @@ const finPageGen = () =>{
                 const storysection = document.createElement("section")
                 
                 //         <h2>Financial Holdings </h2>
-                const storytitle = document.createElement("h2")
-                storytitle.textContent = story.storytitle
-                storysection.appendChild(storytitle)
+                // const storytitle = document.createElement("h2")
+                // storytitle.textContent = story.storytitle
+                storysection.appendChild(createh2element(story.storytitle))
                 
                 //         <ul>
                 const storyUL = document.createElement("ul")
