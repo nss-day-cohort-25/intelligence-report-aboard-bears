@@ -44,7 +44,7 @@ summaryNav.addEventListener("click", () => {
 
 rapSheet.addEventListener("click", () => {
     nukeDOM()
-
+    printRapsheet()
 
     takeButtonCurrentPage(summaryNav)
     setButtonCurrentPage(rapSheet)

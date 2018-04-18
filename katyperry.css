@@ -3,7 +3,7 @@ body {
   background-color: pink;
   background-image: url(http://getwallpapers.com/wallpaper/full/c/8/9/187163.jpg) ;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -104,7 +104,7 @@ button:focus {
 }
 
 
-h2 ~ ol, h2 ~ ul, .peach-background {
+h2 ~ ol, h2 ~ ul, .peach-background, .tweets {
   background-color: rgba(255, 218, 185, .8);
   border-radius: 25px;
   margin-top: 20px;
@@ -113,4 +113,5 @@ h2 ~ ol, h2 ~ ul, .peach-background {
 img {
   border-radius: 5%;
 }
+
 
