@@ -1,6 +1,6 @@
 /* styles for index.html only */
 
-#knownAssociates div {
+.knownAssociates div {
     display: inline-block;
     margin: 0 1em 1em 0;
     border: 3px solid purple;
@@ -8,11 +8,11 @@
     box-shadow: 10px 10px 5px black;
 }
 
-#knownAssociates div:nth-child(even) {
+.knownAssociates div:nth-child(even) {
     background-color: fuchsia;
 }
 
-#knownAssociates div:nth-child(odd) {
+.knownAssociates div:nth-child(odd) {
     background-color: lime;
 }
 
