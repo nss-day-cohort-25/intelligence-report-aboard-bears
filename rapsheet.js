@@ -27,7 +27,8 @@ const createCrimePhoto = () => {
 
 const createTweets = () => {
   const article = document.querySelector("#main")
-  const section = document.createElement("div")
+  const section = document.createElement("section")
+  section.setAttribute("class", "tweets")
   section.appendChild(createh2element("List of Convictions:"))
   let i = 0
   mainDatabase.convictions.forEach(() => {
