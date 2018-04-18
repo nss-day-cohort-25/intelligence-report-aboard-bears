@@ -5,11 +5,9 @@ const printRapsheet = () => {
   fragment.appendChild(createCrimes())
   fragment.appendChild(createCrimePhoto())
   // fragment.appendChild(createTweets())
-  fragment.appendChild(createh2element("Prisons Where Suspect was Incarcerated:"))
   fragment.appendChild(createPrisons())
-  fragment.appendChild(createh2element("Witnesses to Her Crimes:"))
   fragment.appendChild(createWitnesses())
-  fragment.appendChild(createh2element("Victims of Her Crimes:"))
+  fragment.appendChild(createVictims())
   console.log("checking!")
   article.appendChild(fragment)
 }
