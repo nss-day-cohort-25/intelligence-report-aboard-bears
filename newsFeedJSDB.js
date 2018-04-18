@@ -1,5 +1,3 @@
-
-
 const newsFeedDB = [
     //"recent criminal activity section"
     section = [
