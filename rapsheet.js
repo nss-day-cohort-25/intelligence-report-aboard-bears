@@ -41,7 +41,7 @@ const createCrimePhoto = () => {
 const createPrisons = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
-
+  section.appendChild(createh2element("Prisons Where Suspect was Incarcerated:"))
   const list = document.createElement("ul")
   mainDatabase.incarceration.forEach(prison => {
     list.appendChild(createlielement(prison))
@@ -54,6 +54,7 @@ const createPrisons = () => {
 const createWitnesses = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
+  section.appendChild(createh2element("Witnesses to Her Crimes:"))
   const list = document.createElement("ul")
   mainDatabase.witnesses.forEach(witness => {
     list.appendChild(createlielement(witness))
@@ -66,6 +67,7 @@ const createWitnesses = () => {
 const createVictims = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
+  section.appendChild(createh2element("Victims of Her Crimes:"))
   const list = document.createElement("ul")
   mainDatabase.victims.forEach(victim => {
     list.appendChild(createlielement(victim))
@@ -74,3 +76,4 @@ const createVictims = () => {
 
   return section
 }
+
