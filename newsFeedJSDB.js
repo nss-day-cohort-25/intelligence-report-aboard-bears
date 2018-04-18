@@ -1,225 +1,262 @@
+const databaseList = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1ILZ9eA8_LUtSplwQgyV52lCQz_hq3zjb5xVyzn_TwLY-hIx",
+    "Feed",
+    "Recent Criminal Activity",
+    ["Slaughtered thousands of eardrums with unforeseeable radio plays","Collaborating with Apple to conduct another U2 event","Actively pursuing placement on seemingly innocuous playlists"],
+    "https://i.ytimg.com/vi/TiKJ7X2wqcc/maxresdefault.jpg",
+    "Will It Happen to YOU?",            
+    null,
+    "90%",
+    "Though Apple took lots of flack for their involvement with U2, they seem to have taken a malicious turn since the loss of their zen founder. They do have to keep the books in the black but this horrible concept appeals to their inherent depravity. God help those of you with Macs and iPhones. It is less likely to happen, but there is absolutely nothing you can do if you are an Apple user. You'll never swap Android, so just take this one on the chin and avoid using the standard music player with apps like Spotify.",
+    null,
+    "3%",
+    "I mean, you aren't listening to playlists with music that could be associated with someone this truly horrendous so this is an area of least concern. Try to avoid anything related to Disney or targeted toward tweens and there shouldn't be an issue. In any case, simply be aware that this could affect friends and family members. Remain vigilant and protect your eardrums.",
+    null,
+    "http://www1.pictures.zimbio.com/gi/Katy+Perry+Katy+Perry+Visits+Radio+Morning+l7nZABa7_qul.jpg",
+    "https://pbs.twimg.com/media/Bx4rp0JIYAAKuFa.jpg",
+    "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iBwykVuDbxiI/v5/640x-1.jpg",
+    "Dirty Details",
+    "Conducts an Ongoing Career of Terrorism",
+    "There appears to be no end in sight but the benchmark acts of violence occurred on:",
+    ["June 17, 2008; One of the Boys", "August 24, 2010; Teenage Dream", "October 18, 2013; Prism", "June 9, 2017; Witness"],
+    "https://img00.deviantart.net/e832/i/2012/174/d/c/katy_perry_albums_png_pack_updated_6_22_12_by_katycatriley-d54jjqf.jpg",
+    "Almost Nowhere Remains Unaffected",
+    "https://i.ytimg.com/vi/vlzhD9lIt58/maxresdefault.jpg",
+    "Though it may feel ubiquitous in its scope, there are some areas that have escaped her influence. Here are a few:",
+    ["Cambodia", "Swaziland", "Madagascar (WAIT NO SHE'S ON THE SOUNDTRACK)", "Tuvalu", "Uzbekistan", "Agency Investigation of Crimes"],
+    "Agency Investigation of Crimes",
+    "Everyone has been affected in acts ranging from mental abuse to physical harm, from financial losses direct and indirect, and all have scars that will linger as reminders. Every agency with investigative powers has become involved. Official investigations are ongoing in:",
+    "https://cdn.sovereignman.com/wp-content/uploads/2014/11/Federal-Agency-Logos.png",
+    ["FBI", "CIA", "FDA", "NORAD", "DOD", "QWERTY", "DOL", "DOS", "DOH", "Her Victims and Witnesses"],
+    "Her Victims and Witnesses",
+    "https://pbs.twimg.com/profile_images/824716853989744640/8Fcd0bji_400x400.jpg",
+    "If I was to tell you who was affected, I would do so best with the words of another. \"He was Edmond Dantés... and he was my father. And my mother... my brother... my friend. He was you... and me. He was all of us.\" - Evey Hammond",
+]
+
 const newsFeedDB = [
     //"recent criminal activity section"
-    section = [
         headingImage = {
             type: "img",
-            val: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1ILZ9eA8_LUtSplwQgyV52lCQz_hq3zjb5xVyzn_TwLY-hIx",
+            val: "",
             class: null,
             id: "headingImage"
         },
         newsFeed = {
             type: "h1",
-            val: "Feed",
+            val: "",
             class: null,
             id: "newsHeading"
         },
         h2CrimAct = {
             type: "h2",
-            val: "Recent Criminal Activity",
+            val: "",
             class: null,
             id: null
         },
         CriminalActList = {
             type: "ul",
-            val: ["Slaughtered thousands of eardrums with unforeseeable radio plays","Collaborating with Apple to conduct another U2 event","Actively pursuing placement on seemingly innocuous playlists"],
+            val: "",
             class: null,
             id: null
         },
 
         CrimeListImg = {
             type: "image",
-            val: "https://i.ytimg.com/vi/TiKJ7X2wqcc/maxresdefault.jpg",
+            val: "",
             class: "image",
             id: null
         },
     //"will it happen section"
         willItHappenHead = {
             type: "h2",
-            val: "Will It Happen to YOU?",            
+            val: "",
             class: null,
             id: null
         },
         willItBreak = {
     
             type: "br",
-            val: null,
+            val: "",
             class: null,
             id: null
         },
         willItNine = {
             type: "h3",
-            val: "90%",
+            val: "",
             class: "willItHappen",
             id: null
         },
         willItNineP = {
             type: "p",
-            val: "Though Apple took lots of flack for their involvement with U2, they seem to have taken a malicious turn since the loss of their zen founder. They do have to keep the books in the black but this horrible concept appeals to their inherent depravity. God help those of you with Macs and iPhones. It is less likely to happen, but there is absolutely nothing you can do if you are an Apple user. You'll never swap Android, so just take this one on the chin and avoid using the standard music player with apps like Spotify.",
+            val: "",
             class: "willItHappen",
             id: null
         },
         willItNineBr = {
             type: "br",
-            val: null,
+            val: "",
             class: null,
             id: null
         },
         ThreePer = {
             type: "h3",
-            val: "3%",
+            val: "",
             class: "willItHappen",
             id: null
         },
         threePerP = {
     
             type: "p",
-            val: "I mean, you aren't listening to playlists with music that could be associated with someone this truly horrendous so this is an area of least concern. Try to avoid anything related to Disney or targeted toward tweens and there shouldn't be an issue. In any case, simply be aware that this could affect friends and family members. Remain vigilant and protect your eardrums.",
+            val: "",
             class: "willItHappen",
             id: null
         },
         threePerBr = {
     
             type: "br",
-            val: null,
+            val: "",
             class: null,
             id: null
         },
         KPRadioImg = {
     
             type: "img",
-            val: "http://www1.pictures.zimbio.com/gi/Katy+Perry+Katy+Perry+Visits+Radio+Morning+l7nZABa7_qul.jpg",
+            val: "",
             class: "image",
             id: null
         },
         PBSImg = {
     
             type: "img",
-            val: "https://pbs.twimg.com/media/Bx4rp0JIYAAKuFa.jpg",
+            val: "",
             class: "image",
             id: null
         },
         assetsImg = {
     
             type: "img",
-            val: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iBwykVuDbxiI/v5/640x-1.jpg",
+            val: "",
             class: null,
             id: "taller"
         },
         //"dirty details section"
         dirtyTitle = {
             type: "h2",
-            val: "Dirty Details",
+            val: "",
             class: null,
             id: null
         },
         conductTerror = {
     
             type: "h3",
-            val: "Conducts an Ongoing Career of Terrorism",
+            val: "",
             class: null,
             id: null
         },
         terrorP = {
     
             type: "p",
-            val: "There appears to be no end in sight but the benchmark acts of violence occurred on:",
+            val: "",
             class: null,
             id: null
         },
         terrorList = {
     
             type: "ul",
-            val: ["June 17, 2008; One of the Boys", "August 24, 2010; Teenage Dream", "October 18, 2013; Prism", "June 9, 2017; Witness"],
+            val: "",
             class: null,
             id: null
         },
         terrorImg = {
     
             type: "img",
-            val: "https://img00.deviantart.net/e832/i/2012/174/d/c/katy_perry_albums_png_pack_updated_6_22_12_by_katycatriley-d54jjqf.jpg",
+            val: "",
             class: "image",
             id: null
         },
         nowhereTitle = {
     
             type: "h3",
-            val: "Almost Nowhere Remains Unaffected",
+            val: "",
             class: null,
             id: null
         },
         nowhereImg = {
     
             type: "img",
-            val: "https://i.ytimg.com/vi/vlzhD9lIt58/maxresdefault.jpg",
+            val: "",
             class: "image",
             id: null
         },
         nowhereP = {
     
             type: "p",
-            val: "Though it may feel ubiquitous in its scope, there are some areas that have escaped her influence. Here are a few:",
+            val: "",
             class: null,
             id: null
         },
         nowhereList = {
     
             type: "ul",
-            val: ["Cambodia", "Swaziland", "Madagascar (WAIT NO SHE'S ON THE SOUNDTRACK)", "Tuvalu", "Uzbekistan", "Agency Investigation of Crimes"],
+            val: "",
             class: null,
             id: null
         },
         investHeader = {
     
             type: "h3",
-            val: "Agency Investigation of Crimes",
+            val: "",
             class: null,
             id: null
         },
         investP = {
     
             type: "p",
-            val: "Everyone has been affected in acts ranging from mental abuse to physical harm, from financial losses direct and indirect, and all have scars that will linger as reminders. Every agency with investigative powers has become involved. Official investigations are ongoing in:",
+            val: "",
             class: null,
             id: null
         },
         investImg = {
     
             type: "img",
-            val: "https://cdn.sovereignman.com/wp-content/uploads/2014/11/Federal-Agency-Logos.png",
+            val: "",
             class: "image",
             id: null
         },
         investList = {
     
             type: "ul",
-            val: ["FBI", "CIA", "FDA", "NORAD", "DOD", "QWERTY", "DOL", "DOS", "DOH", "Her Victims and Witnesses"],
+            val: "",
             class: null,
             id: null
         },
         herVicHead = {
     
             type: "h3",
-            val: "Her Victims and Witnesses",
+            val: "",
             class: null,
             id: null
         },
         herVicImg = {
     
             type: "img",
-            val: "https://pbs.twimg.com/profile_images/824716853989744640/8Fcd0bji_400x400.jpg",
+            val: "",
             class: null,
             id: null
         },
         herVicP = {
     
             type: "p",
-            val: "If I was to tell you who was affected, I would do so best with the words of another. \"He was Edmond Dantés... and he was my father. And my mother... my brother... my friend. He was you... and me. He was all of us.\" - Evey Hammond",
+            val: "",
             class: null,
             id: null
         },
-        ]
     ]
 
+for (let index = 0; index < newsFeedDB.length; index++) {
+    newsFeedDB[index].val = databaseList[index]
+}
+console.log(newsFeedDB)
 
 const ifMainTest = function (NF) {
     const articleINIT = document.createElement("article");
@@ -230,10 +267,8 @@ const ifMainTest = function (NF) {
         //append a section to the DOM
         const sectionINIT = document.createElement("section")
         articleINIT.appendChild(sectionINIT)
-        const NFTags = NF[index]
+        const sectionObjects = NF[index]
         
-        for (let index = 0; index < NFTags.length; index++) {
-            const sectionObjects = NFTags[index];
             //create images
             if (sectionObjects.type === "img") {
                 const newImage = document.createElement("img")
@@ -296,8 +331,7 @@ const ifMainTest = function (NF) {
                 newP.id = sectionObjects.id
                 sectionINIT.appendChild(newP)
             }
-        }
-
+        
 
     }
 
