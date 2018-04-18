@@ -256,7 +256,6 @@ const newsFeedDB = [
 for (let index = 0; index < newsFeedDB.length; index++) {
     newsFeedDB[index].val = databaseList[index]
 }
-console.log(newsFeedDB)
 
 const ifMainTest = function (NF) {
     const article = document.querySelector("#main");
