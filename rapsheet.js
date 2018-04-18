@@ -25,18 +25,19 @@ const createCrimePhoto = () => {
   return section
 }
 
-// const createTweets = () => {
-//   const article = document.querySelector("#main")
-//   const section = document.createElement("div")
-//   fragment.appendChild(createh2element("List of Convictions:"))
-//   let i = 0
-//   mainDatabase.convictions.forEach(() => {
-//     let tweet = mainDatabase.convictions[i]
-//     section.appendChild(tweet)
-//     i++
-//   })
-//   return section
-// }
+const createTweets = () => {
+  const article = document.querySelector("#main")
+  const section = document.createElement("section")
+  section.setAttribute("class", "tweets")
+  section.appendChild(createh2element("List of Convictions:"))
+  let i = 0
+  mainDatabase.convictions.forEach(() => {
+    // section.appendChild(mainDatabase.convictions[i])
+    section.insertAdjacentHTML('beforeend', mainDatabase.convictions[i]);
+    i++
+  })
+  return section
+}
 
 const createPrisons = () => {
   const article = document.querySelector("#main")

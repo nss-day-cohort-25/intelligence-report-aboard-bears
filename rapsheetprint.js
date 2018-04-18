@@ -4,7 +4,7 @@ const printRapsheet = () => {
   fragment.appendChild(createh1element("Rap Sheet"))
   fragment.appendChild(createCrimes())
   fragment.appendChild(createCrimePhoto())
-  // fragment.appendChild(createTweets())
+  fragment.appendChild(createTweets())
   fragment.appendChild(createPrisons())
   fragment.appendChild(createWitnesses())
   fragment.appendChild(createVictims())
