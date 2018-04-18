@@ -222,14 +222,12 @@ const newsFeedDB = [
 
 
 const ifMainTest = function (NF) {
-    const articleINIT = document.createElement("article");
-    const a = document.querySelector("body");
-    const b = document.createDocumentFragment();
-    b.appendChild(articleINIT);
+    const article = document.querySelector("#main");
+    const fragment = document.createDocumentFragment();
     for (let index = 0; index < NF.length; index++) {
         //append a section to the DOM
         const sectionINIT = document.createElement("section")
-        articleINIT.appendChild(sectionINIT)
+        fragment.appendChild(sectionINIT)
         const NFTags = NF[index]
         
         for (let index = 0; index < NFTags.length; index++) {
@@ -301,7 +299,7 @@ const ifMainTest = function (NF) {
 
     }
 
-    a.appendChild(b);
+    article.appendChild(fragment);
 }
 
 
@@ -321,9 +319,9 @@ const ifMainTest = function (NF) {
 // }
 
 // const ifMainTest = function (NF) {
-//         const articleINIT = document.createElement("article");
+//         const fragment = document.createElement("article");
 //         const a = document.querySelector("body");
-//         a.appendChild(articleINIT);
+//         a.appendChild(fragment);
 //         const b = document.createDocumentFragment()
 //         for (let index = 0; index < nf.length; index++) {
 //             //append a section to the DOM
