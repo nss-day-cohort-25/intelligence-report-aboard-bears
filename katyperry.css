@@ -3,7 +3,7 @@ body {
   background-color: pink;
   background-image: url(http://getwallpapers.com/wallpaper/full/c/8/9/187163.jpg) ;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 

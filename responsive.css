@@ -1,0 +1,50 @@
+/* media query layouts */
+@media (max-width: 1170px) {
+    .resize_bigger {
+        width: 200px;
+        height: auto;
+        min-width: 100%;
+    }
+    article {
+        margin-top: 155px;
+    }
+}
+
+@media (max-width: 584px) {
+    article {
+        margin-top: 150px;
+        width: 95%;
+    }
+    .knownAssociates div {
+        max-width: 100%;
+    }
+    .resize {
+        max-width: 100%;
+    }
+    #mainNav button {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 429px) {
+    article {
+        margin-top: 150px;
+    }
+    .catcoin {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    article {
+        margin-top: 200px;
+    }
+    article {
+        width: 100%;
+    }
+    div {
+        width: 95%;
+        margin: auto;
+    }
+}
