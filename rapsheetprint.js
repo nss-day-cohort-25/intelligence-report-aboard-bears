@@ -1,0 +1,15 @@
+const printRapsheet = () => {
+  const article = document.querySelector("#main")
+  const fragment = document.createDocumentFragment()
+  fragment.appendChild(createh1element("Rap Sheet"))
+  fragment.appendChild(createCrimes())
+  fragment.appendChild(createCrimePhoto())
+  // fragment.appendChild(createTweets())
+  fragment.appendChild(createh2element("Prisons Where Suspect was Incarcerated:"))
+  fragment.appendChild(createPrisons())
+  fragment.appendChild(createh2element("Witnesses to Her Crimes:"))
+  fragment.appendChild(createWitnesses())
+  fragment.appendChild(createh2element("Victims of Her Crimes:"))
+  console.log("checking!")
+  article.appendChild(fragment)
+}
