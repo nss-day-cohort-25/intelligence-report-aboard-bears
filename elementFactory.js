@@ -50,3 +50,9 @@ const createimgelement = (src, classname) => {
     }
     return image
 }
+
+const createfigcapelement = (caption) => {
+    const figcap = document.createElement("figcaption")
+    figcap.textContent = caption
+    return element
+}
