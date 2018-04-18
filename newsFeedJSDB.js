@@ -415,7 +415,7 @@ const ifMainTest = function (NF, format) {
         const sectionINIT = document.createElement("section")
         //append the section to the outermost article tag
         articleINIT.appendChild(sectionINIT)
-        vals.push(NF[NFArray[index]])
+        vals.push(NFArray[index])
     }
     if (vals.length !== format.length) {
         console.log("check your format");
@@ -424,39 +424,7 @@ const ifMainTest = function (NF, format) {
         for (let index = 0; index < format.length; index++) {
             const sectionObjects = format[index];
             sectionObjects.val = vals[index]
-            //create images
-            if (sectionObjects.type === "img") {
-                const newImage = document.createElement("img")
-                newImage.src = sectionObjects.val
-                newImage.class = sectionObjects.class
-                newImage.id = sectionObjects.id
-                sectionINIT.appendChild(newImage)
-            }
-            //create h1
-            if (sectionObjects.type === "h1") {
-                const newH1 = document.createElement("h1")
-                newH1.textContent = sectionObjects.val
-                newH1.class = sectionObjects.class
-                newH1.id = sectionObjects.id
-                sectionINIT.appendChild(newH1)
-            }
-            //create h2
-            if (sectionObjects.type === "h2") {
-                const newH2 = document.createElement("h2")
-                newH2.textContent = sectionObjects.val
-                newH2.class = sectionObjects.class
-                newH2.id = sectionObjects.id
-                sectionINIT.appendChild(newH2)
-            }
-            // //create h3
-            if (sectionObjects.type === "h3") {
-                const newH3 = document.createElement("h3")
-                newH3.textContent = sectionObjects.val
-                newH3.class = sectionObjects.class
-                newH3.id = sectionObjects.id
-                sectionINIT.appendChild(newH3)
-            }
-            // //create ul add li handler
+            //ul creation
             if (sectionObjects.type === "ul") {
                 const newUl = document.createElement("ul")
                 const secVal = sectionObjects.val
@@ -468,22 +436,66 @@ const ifMainTest = function (NF, format) {
                 }
                 newUl.class = sectionObjects.class
                 newUl.id = sectionObjects.id
+            }
+            //li creation
+            if (sectionObjects.type === li) {
+                const newLi = document.createElement("li")
+                newLi.textContent = sectionObjects.val
+                newLi.class = sectionObjects.class
+                newLi.id = sectionObjects.id
+                newUl.append(newLi)
+            }
+            if (sectionObjects.type !== li) {
                 sectionINIT.appendChild(newUl)
-            }
-            // //create br
-            if (sectionObjects.type === "br") {
-                const newBr = document.createElement("br")
-                newBr.class = sectionObjects.class
-                newBr.id = sectionObjects.id
-                sectionINIT.appendChild(newBr)
-            }
-            // //create p
-            if (sectionObjects.type === "p") {
-                const newP = document.createElement("p")
-                newP.textContent = sectionObjects.val
-                newP.class = sectionObjects.class
-                newP.id = sectionObjects.id
-                sectionINIT.appendChild(newP)
+                //create images
+                if (sectionObjects.type === "img") {
+                    const newImage = document.createElement("img")
+                    newImage.src = sectionObjects.val
+                    newImage.class = sectionObjects.class
+                    newImage.id = sectionObjects.id
+                    sectionINIT.appendChild(newImage)
+                }
+                //create h1
+                if (sectionObjects.type === "h1") {
+                    const newH1 = document.createElement("h1")
+                    newH1.textContent = sectionObjects.val
+                    newH1.class = sectionObjects.class
+                    newH1.id = sectionObjects.id
+                    sectionINIT.appendChild(newH1)
+                }
+                //create h2
+                if (sectionObjects.type === "h2") {
+                    const newH2 = document.createElement("h2")
+                    newH2.textContent = sectionObjects.val
+                    newH2.class = sectionObjects.class
+                    newH2.id = sectionObjects.id
+                    sectionINIT.appendChild(newH2)
+                }
+                // //create h3
+                if (sectionObjects.type === "h3") {
+                    const newH3 = document.createElement("h3")
+                    newH3.textContent = sectionObjects.val
+                    newH3.class = sectionObjects.class
+                    newH3.id = sectionObjects.id
+                    sectionINIT.appendChild(newH3)
+                }
+                // //create ul add li handler
+                
+                // //create br
+                if (sectionObjects.type === "br") {
+                    const newBr = document.createElement("br")
+                    newBr.class = sectionObjects.class
+                    newBr.id = sectionObjects.id
+                    sectionINIT.appendChild(newBr)
+                }
+                // //create p
+                if (sectionObjects.type === "p") {
+                    const newP = document.createElement("p")
+                    newP.textContent = sectionObjects.val
+                    newP.class = sectionObjects.class
+                    newP.id = sectionObjects.id
+                    sectionINIT.appendChild(newP)
+                }
             }
         }
             
@@ -496,7 +508,7 @@ const ifMainTest = function (NF, format) {
 }
     
    
-
+//  || section.objects[index + 1]
 
 
 
