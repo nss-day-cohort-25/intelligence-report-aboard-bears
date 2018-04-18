@@ -1,4 +1,3 @@
-mainDatabase.newsFeedDB.push();
 
 
 const newsFeedDB = [
@@ -237,20 +236,20 @@ const ifMainTest = function (NF) {
         
         for (let index = 0; index < NFTags.length; index++) {
             const sectionObjects = NFTags[index];
-            console.log(sectionObjects)
             //create images
             if (sectionObjects.type === "img") {
                 const newImage = document.createElement("img")
                 newImage.src = sectionObjects.val
-                newImage.class = sectionObjects.class
+                newImage.className = sectionObjects.class
                 newImage.id = sectionObjects.id
+                newImage.className += " resize"
                 sectionINIT.appendChild(newImage)
             }
             //create h1
             if (sectionObjects.type === "h1") {
                 const newH1 = document.createElement("h1")
                 newH1.textContent = sectionObjects.val
-                newH1.class = sectionObjects.class
+                newH1.className = sectionObjects.class
                 newH1.id = sectionObjects.id
                 sectionINIT.appendChild(newH1)
             }
@@ -258,7 +257,7 @@ const ifMainTest = function (NF) {
             if (sectionObjects.type === "h2") {
                 const newH2 = document.createElement("h2")
                 newH2.textContent = sectionObjects.val
-                newH2.class = sectionObjects.class
+                newH2.className = sectionObjects.class
                 newH2.id = sectionObjects.id
                 sectionINIT.appendChild(newH2)
             }
@@ -266,7 +265,7 @@ const ifMainTest = function (NF) {
             if (sectionObjects.type === "h3") {
                 const newH3 = document.createElement("h3")
                 newH3.textContent = sectionObjects.val
-                newH3.class = sectionObjects.class
+                newH3.className = sectionObjects.class
                 newH3.id = sectionObjects.id
                 sectionINIT.appendChild(newH3)
             }
@@ -280,14 +279,14 @@ const ifMainTest = function (NF) {
                     item.textContent = itemVal
                     newUl.appendChild(item)
                 }
-                newUl.class = sectionObjects.class
+                newUl.className = sectionObjects.class
                 newUl.id = sectionObjects.id
                 sectionINIT.appendChild(newUl)
             }
             // //create br
             if (sectionObjects.type === "br") {
                 const newBr = document.createElement("br")
-                newBr.class = sectionObjects.class
+                newBr.className = sectionObjects.class
                 newBr.id = sectionObjects.id
                 sectionINIT.appendChild(newBr)
             }
@@ -295,7 +294,7 @@ const ifMainTest = function (NF) {
             if (sectionObjects.type === "p") {
                 const newP = document.createElement("p")
                 newP.textContent = sectionObjects.val
-                newP.class = sectionObjects.class
+                newP.className = sectionObjects.class
                 newP.id = sectionObjects.id
                 sectionINIT.appendChild(newP)
             }
