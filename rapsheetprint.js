@@ -8,6 +8,5 @@ const printRapsheet = () => {
   fragment.appendChild(createPrisons())
   fragment.appendChild(createWitnesses())
   fragment.appendChild(createVictims())
-  console.log("checking!")
   article.appendChild(fragment)
 }
