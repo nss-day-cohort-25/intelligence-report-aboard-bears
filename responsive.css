@@ -12,7 +12,7 @@
 
 @media (max-width: 584px) {
     article {
-        margin-top: 220px;
+        margin-top: 150px;
         width: 95%;
     }
     .knownAssociates div {
@@ -21,11 +21,14 @@
     .resize {
         max-width: 100%;
     }
+    #mainNav button {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 429px) {
     article {
-        margin-top: 280px;
+        margin-top: 150px;
     }
     .catcoin {
         width: 100px;
@@ -35,7 +38,7 @@
 
 @media (max-width: 380px) {
     article {
-        margin-top: 380px;
+        margin-top: 200px;
     }
     article {
         width: 100%;
