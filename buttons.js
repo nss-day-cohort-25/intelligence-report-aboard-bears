@@ -54,7 +54,7 @@ rapSheet.addEventListener("click", () => {
 
 newsFeed.addEventListener("click", () => {
     nukeDOM()
-
+    ifMainTest(newsFeedDB);
     
     takeButtonCurrentPage(summaryNav)
     takeButtonCurrentPage(rapSheet)
