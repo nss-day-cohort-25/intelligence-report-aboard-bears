@@ -7,12 +7,14 @@ mainDatabase.crimes = [
   "Dark Horse",
   "Firework",
   "Roar",
-  '<img src="https://assets.heart.co.uk/2010/41/katy-perry-august-2010-2-1286811979-view-1.jpg" alt="Katy Perry at her best" width="100px">',
-  "Other musical crimes against humanity"
+  "Other musical crimes against humanity",
+  "This picture:"
 ]
-
+mainDatabase.crimephoto = {
+  "image": `https://assets.heart.co.uk/2010/41/katy-perry-august-2010-2-1286811979-view-1.jpg`
+}
 mainDatabase.convictions = [
-  '<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Katy Perry just dead ass made fun of Britney&#39;s breakdown not once, but TWICE on the red carpet. What a trash can.</p>&mdash; xoxo (@karmandabynes)<a href="https://twitter.com/karmandabynes/status/830941782284312576?ref_src=twsrc%5Etfw">February 13, 2017</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
+  '<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Katy Perry just dead ass made fun of Britney&#39;s breakdown not once, but TWICE on the red carpet.  What a trash can.</p>&mdash; xoxo (@karmandabynes) <a href="https://twitter.com/karmandabynes/status/830941782284312576?ref_src=twsrc%5Etfw">February 13, 2017</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
   '<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/katyperry?ref_src=twsrc%5Etfw">@katyperry</a> how a person so ugly and untalented still is famous escapes me. You stink</p>&mdash; michael perrins(@perrins_michael)<a href="https://twitter.com/perrins_michael/status/983474464963743745?ref_src=twsrc%5Etfw">April 9, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
   '<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Singer Katy Perry (real name Katheryn Hudson) has Illuminati blood flowing through her veins. She is related to Charles M. Schwab.</p>&mdash; Bruxaria Alemã (@BruxariaNordica)<a href="https://twitter.com/BruxariaNordica/status/977440544199794688?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
 ]
