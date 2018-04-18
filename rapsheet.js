@@ -1,8 +1,7 @@
 const createCrimes = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
-  
-
+  section.appendChild(createh2element("List of Alleged Crimes:"))
   const list = document.createElement("ul")
   mainDatabase.crimes.forEach(crime => {
     list.appendChild(createlielement(crime))
@@ -15,25 +14,63 @@ const createCrimes = () => {
 const createCrimePhoto = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
+
   const createimgelement = (src, classname) => {
     const image = document.createElement("img")
     image.setAttribute("src", src)
     image.setAttribute("width", "200px")
     return image
   }
-
   section.appendChild(createimgelement(mainDatabase.crimephoto.image))
+  return section
+}
+
+// const createTweets = () => {
+//   const article = document.querySelector("#main")
+//   const section = document.createElement("div")
+//   fragment.appendChild(createh2element("List of Convictions:"))
+//   let i = 0
+//   mainDatabase.convictions.forEach(() => {
+//     let tweet = mainDatabase.convictions[i]
+//     section.appendChild(tweet)
+//     i++
+//   })
+//   return section
+// }
+
+const createPrisons = () => {
+  const article = document.querySelector("#main")
+  const section = document.createElement("section")
+
+  const list = document.createElement("ul")
+  mainDatabase.incarceration.forEach(prison => {
+    list.appendChild(createlielement(prison))
+  });
+  section.appendChild(list)
 
   return section
 }
 
-const createTweets = () => {
+const createWitnesses = () => {
   const article = document.querySelector("#main")
   const section = document.createElement("section")
-  let i = 0
-  mainDatabase.convictions.forEach(() => {
-    section.insertAdjacentHTML('beforeend', ${mainDatabase.convictions[i]})
-    i++
-  })
+  const list = document.createElement("ul")
+  mainDatabase.witnesses.forEach(witness => {
+    list.appendChild(createlielement(witness))
+  });
+  section.appendChild(list)
+
+  return section
+}
+
+const createVictims = () => {
+  const article = document.querySelector("#main")
+  const section = document.createElement("section")
+  const list = document.createElement("ul")
+  mainDatabase.victims.forEach(victim => {
+    list.appendChild(createlielement(victim))
+  });
+  section.appendChild(list)
+
   return section
 }
